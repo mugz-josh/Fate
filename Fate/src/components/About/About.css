@@ -1,0 +1,182 @@
+.about {
+  background: var(--white);
+  position: relative;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-main-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: var(--shadow-medium);
+}
+
+.about-card {
+  position: absolute;
+  bottom: 30px;
+  right: -30px;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-medium);
+  min-width: 200px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--primary-pink);
+  flex-shrink: 0;
+}
+
+.card-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.about-text {
+  padding-left: 2rem;
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.about-story {
+  margin-bottom: 3rem;
+}
+
+.about-story p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.about-story strong {
+  color: var(--primary-pink);
+  font-weight: 600;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--neutral-cream);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateX(10px);
+}
+
+.highlight-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-pink);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.highlight h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+}
+
+.highlight p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.about-cta {
+  text-align: left;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-main-image {
+    height: 400px;
+  }
+
+  .about-card {
+    position: static;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-highlights {
+    text-align: left;
+  }
+
+  .about-cta {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-main-image {
+    height: 350px;
+  }
+
+  .highlight {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .highlight-icon {
+    margin: 0 auto;
+  }
+}
