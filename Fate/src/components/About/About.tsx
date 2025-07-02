@@ -1,4 +1,4 @@
-import { Heart, Award, Users, Calendar } from 'lucide-react';
+import { Heart, Award, Users, Calendar } from 'react-feather';
 import './About.css';
 
 const About = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Palette, Sparkles, Heart, Crown, Star, Gift } from 'lucide-react';
 import './Services.css';
 
